@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coastal Getaway | Tropical Beach Escape</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="container">
+        <div class="logo">🌴 Coastal Getaway</div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href=" ">Home</a ></li>
+                <li><a href="#about">About</a ></li>
+                <li><a href="#services">Services</a ></li>
+                <li><a href="#contact">Contact</a ></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+    <!-- Home Hero (hero‑beach.jpg) -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <h1>Coastal Getaway</h1>
+            <p>Sun • Sand • Ocean — Your perfect tropical beach holiday</p >
+            <a href="#services" class="btn btn‑orange">View All Activities</a >
+        </div>
+    </section>
+    <!-- About：coastal‑view.jpg + sunset‑beach.jpg -->
+    <section id="about" class="section section‑color‑teal">
+        <div class="container">
+            <h2 class="section‑heading">Escape To The Coast</h2>
+            <div class="about-row">
+                <div class="about-text">
+                    <p>Coastal Getaway brings you exciting tropical beach experiences. Feel warm sunshine, fresh sea wind, magical sunsets, beach camping and delicious seaside seafood. We welcome couples, family trips and group adventures.</p >
+                    <ul class="icon-list">
+                        <li>🏖️ Pristine white‑sand beaches</li>
+                        <li>⛺ Overnight beach camping sites</li>
+                        <li>🤿 Fun snorkeling marine adventure</li>
+                        <li>🍤 Fresh local seaside cuisine</li>
+                    </ul>
+                </div>
+                <div class="about-media">
+                    <img src="images/coastal-view.jpg" alt="Coastal ocean scenery" class="responsive-img shadow‑pop">
+                    <img src="images/sunset-beach.jpg" alt="Beautiful beach sunset" class="responsive-img">
+                    <!-- 替换为本地MP4视频，删掉原来YouTube iframe -->
+                    <div class="video-wrap">
+                        <video controls>
+                            <source src="video/beach.mp4" type="video/mp4">
+                            Your browser does not support video playback.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services 4张卡片 -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2 class="section‑heading">Our Exciting Activities</h2>
+            <div class="service-grid">
+                <div class="service-card card‑orange">
+                    <img src="images/beach-camping.jpg" alt="Beach camping tent" class="responsive-img">
+                    <h3>Beach Camping</h3>
+                    <p>Overnight camping beside sea, watch golden sunrise over ocean.</p >
+                    <span class="price">RM85 / person</span>
+                </div>
+                <div class="service-card card‑coral">
+                    <img src="images/seaside-dining.jpg" alt="Seaside dining restaurant" class="responsive-img">
+                    <h3>Seaside Dining</h3>
+                    <p>Fresh seafood dinner while watching stunning beach sunset.</p >
+                    <span class="price">A la carte menu</span>
+                </div>
+                <div class="service-card card‑blue">
+                    <img src="images/tropical-beach.jpg" alt="Tropical beach trip" class="responsive-img">
+                    <h3>Beach Day Tour</h3>
+                    <p>Swimming, beach games, walking and tropical photography.</p >
+                    <span class="price">RM40 / person</span>
+                </div>
+                <div class="service-card card‑green">
+                    <img src="images/snorkel.jpg" alt="Sea snorkeling experience" class="responsive-img">
+                    <h3>Snorkeling Experience</h3>
+                    <p>Explore colourful corals and amazing underwater sea life.</p >
+                    <span class="price">RM65 / person</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact -->
+    <section id="contact" class="section section‑color‑coral">
+        <div class="container">
+            <h2 class="section‑heading">Get In Touch</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <p>📍 45 Ocean Drive, Coastal Bay</p >
+                    <p>📞 +60 13‑987‑6543</p >
+                    <p>🕐 Open Daily: 8:00AM – 10:00PM</p >
+                    <p>📧 info@coastalgetaway.my</p >
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" id="fullname" name="fullname">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Enquiry</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    <button type="button" class="btn btn‑orange">Send Enquiry</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="site-footer">
+    <div class="container">
+        <p>© 2026 Coastal Getaway | ICT2215 Student Project</p >
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,281 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #222222;
+    line-height: 1.7;
+    background-color: #fffdfb;
+}
+h1,h2,h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight:700;
+}
+ul{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+}
+.container{
+    max-width:1160px;
+    margin:0 auto;
+    padding:0 1.2rem;
+}
+.section{
+    padding:4.5rem 0;
+}
+.section‑heading{
+    font-size:2.2rem;
+    text-align:center;
+    margin-bottom:2.5rem;
+    color:#142b48;
+}
+/* 彩色板块背景 */
+.section‑color‑teal{
+    background-color:#22b8b0;
+    color:#ffffff;
+}
+.section‑color‑teal .section‑heading{
+    color:#ffffff;
+}
+.section‑color‑coral{
+    background-color:#ff7f50;
+    color:#ffffff;
+}
+.section‑color‑coral .section‑heading{
+    color:#ffffff;
+}
+/* Buttons */
+.btn{
+    display:inline-block;
+    border-radius:50px;
+    border:none;
+    cursor:pointer;
+    font-size:1.05rem;
+    font-weight:600;
+    padding:0.9rem 2.2rem;
+    transition:0.25s ease;
+}
+.btn‑orange{
+    background-color:#ff6b2f;
+    color:white;
+}
+.btn‑orange:hover{
+    background-color:#ff4500;
+    transform: translateY(-3px);
+}
+/* Header Navigation */
+.site-header{
+    background-color:#0f3460;
+    color:#fff;
+    position:sticky;
+    top:0;
+    z-index:100;
+    box-shadow:0 4px 12px rgba(0,0,0,0.22);
+}
+.site-header .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1.1rem 1.2rem;
+}
+.logo{
+    font-size:1.5rem;
+    font-weight:900;
+}
+.main-nav ul{
+    display:flex;
+    gap:2rem;
+}
+.main-nav a{
+    color:#ffffff;
+    font-weight:600;
+    font-size:1.05rem;
+}
+.main-nav a:hover{
+    color:#ffd166;
+}
+/* Hero Homepage */
+.hero{
+    min-height:90vh;
+    background:linear-gradient(rgba(15,50,90,0.62),rgba(255,107,47,0.45)), url('images/hero-beach.jpg');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+.hero-content h1{
+    font-size:3.6rem;
+    margin-bottom:1.2rem;
+}
+.hero-content p{
+    font-size:1.35rem;
+    margin-bottom:2.2rem;
+    max-width:700px;
+    margin-left:auto;
+    margin-right:auto;
+}
+/* About Section */
+.about-row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:2.8rem;
+    margin-top:2rem;
+}
+.icon-list{
+    margin-top:1.4rem;
+}
+.icon-list li{
+    margin-bottom:0.8rem;
+    font-size:1.1rem;
+}
+.responsive-img{
+    width:100%;
+    max-width:480px;  /* 限制about里面图片最大宽度，不会超大 */
+    height:auto;
+    border-radius:14px;
+    margin-bottom:1.2rem;
+}
+.shadow‑pop{
+    box-shadow:0 8px 18px rgba(0,0,0,0.25);
+}
+
+/* ========= 修改：适配本地MP4 video标签 ========= */
+.video-wrap{
+    width:100%;
+    max-width:620px; /* 视频最大宽度，想更小就改成520px */
+    margin:24px auto 0;
+}
+.video-wrap video{
+    width:100%;
+    height:auto;
+    border-radius:14px;
+    box-shadow:0 8px 18px rgba(0,0,0,0.25);
+    display:block;
+}
+/* 保留旧iframe样式，以防切回youtube */
+.video-wrap iframe{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    border-radius:14px;
+    border:none;
+    box-shadow:0 8px 18px rgba(0,0,0,0.25);
+}
+
+/* Service Cards — 多色彩卡片 */
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:1.6rem;
+    margin-top:2rem;
+}
+.service-card{
+    padding:1.5rem;
+    border-radius:16px;
+    box-shadow:0 7px 16px rgba(0,0,0,0.16);
+    text-align:center;
+    color:white;
+    transition: transform 0.25s ease;
+}
+.service-card:hover{
+    transform: translateY(-6px);
+}
+/* 限制卡片内图片大小 */
+.service-card img.responsive-img{
+    max-width:100%;
+    max-height:220px;
+    object-fit:cover;
+}
+
+.card‑orange{
+    background:linear-gradient(140deg,#ff7838,#ff481c);
+}
+.card‑coral{
+    background:linear-gradient(140deg,#ff8870,#f24f40);
+}
+.card‑blue{
+    background:linear-gradient(140deg,#219ebc,#023e8a);
+}
+.card‑green{
+    background:linear-gradient(140deg,#2a9d8f,#264653);
+}
+.price{
+    display:inline-block;
+    margin-top:1rem;
+    font-weight:bold;
+    font-size:1.15rem;
+}
+/* Contact Form */
+.contact-wrapper{
+    display:grid;
+    grid-template-columns:1fr 1.4fr;
+    gap:2.8rem;
+    margin-top:2rem;
+}
+.contact-info p{
+    margin-bottom:1.1rem;
+    font-size:1.1rem;
+}
+.form-group{
+    margin-bottom:1.3rem;
+}
+.form-group label{
+    display:block;
+    margin-bottom:0.45rem;
+    font-weight:600;
+}
+.form-group input,
+.form-group textarea{
+    width:100%;
+    padding:0.85rem;
+    border:none;
+    border-radius:10px;
+    font-size:1rem;
+    background:#fff;
+}
+/* Footer */
+.site-footer{
+    background-color:#0f3460;
+    color:white;
+    text-align:center;
+    padding:1.8rem 0;
+}
+/* ========= RESPONSIVE 手机适配 ========= */
+@media(max-width:992px){
+    .service-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+@media(max-width:768px){
+    .site-header .container{
+        flex-direction:column;
+        gap:1rem;
+    }
+    .hero-content h1{
+        font-size:2.3rem;
+    }
+    .about-row{
+        grid-template-columns:1fr;
+    }
+    .service-grid{
+        grid-template-columns:1fr;
+    }
+    .contact-wrapper{
+        grid-template-columns:1fr;
+    }
+    .video-wrap{
+        max-width:100%; /*手机上视频占满可用宽度*/
+    }
+    .responsive-img{
+        max-width:100%;
+    }
+}
